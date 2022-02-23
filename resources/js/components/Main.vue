@@ -1,12 +1,18 @@
 <template>
-  <main>
-    <h2>Lista Posts</h2>
-    <ul>
-      <li v-for="post in posts" :key="post.id">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.content }}</p>
-      </li>
-    </ul>
+  <main class="main">
+    <div class="posts-container">
+      <h2 class="title">Lista Posts</h2>
+      <ul>
+        <li v-for="post in posts" :key="post.id">
+          <a href="#"
+            ><h3>{{ post.title }}</h3></a
+          >
+          <a href="#"
+            ><p>{{ post.content }}</p></a
+          >
+        </li>
+      </ul>
+    </div>
   </main>
 </template>
 
@@ -26,5 +32,47 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
+main {
+  background-color: rgb(245, 245, 245);
+  color: rgb(117, 72, 224);
+}
+.posts-container {
+  background-color: rgb(240, 248, 250);
+  border-radius: 20px;
+  border: 2px solid rgb(50, 190, 230);
+  max-width: 1180px;
+  margin: auto;
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 30px;
+    border-bottom: 2px solid rgb(50, 190, 230);
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 20px 0;
+      margin-left: 50px;
+
+      a {
+        text-decoration: none;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        color: rgb(170, 60, 225);
+      }
+    }
+
+    li:not(:last-child) {
+      border-bottom: 2px solid rgb(50, 190, 230);
+    }
+  }
+}
 </style>
