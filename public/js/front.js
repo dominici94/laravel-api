@@ -2003,6 +2003,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Main",
   data: function data() {
@@ -2033,7 +2035,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "main[data-v-b9c20fb8] {\n  background-color: whitesmoke;\n  color: #7548e0;\n  padding: 70px;\n}\n.posts-container[data-v-b9c20fb8] {\n  background-color: #f0f8fa;\n  border-radius: 20px;\n  border: 2px solid #32bee6;\n  max-width: 1180px;\n  margin: auto;\n  box-shadow: 5px 5px 25px 2px rgba(0, 0, 0, 0.3);\n}\n.posts-container .title[data-v-b9c20fb8] {\n  text-align: center;\n  font-size: 2rem;\n  text-transform: uppercase;\n  padding: 30px;\n  border-bottom: 2px solid #32bee6;\n}\n.posts-container ul[data-v-b9c20fb8] {\n  list-style: none;\n}\n.posts-container ul li[data-v-b9c20fb8] {\n  padding: 20px 0;\n  margin-left: 50px;\n}\n.posts-container ul li a[data-v-b9c20fb8] {\n  text-decoration: none;\n}\n.posts-container ul li h3[data-v-b9c20fb8] {\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  color: #aa3ce1;\n}\n.posts-container ul li[data-v-b9c20fb8]:not(:last-child) {\n  border-bottom: 2px solid #32bee6;\n}", ""]);
+exports.push([module.i, "main[data-v-b9c20fb8] {\n  background-color: whitesmoke;\n  color: #7548e0;\n  padding: 70px;\n}\n.posts-container[data-v-b9c20fb8] {\n  background-color: #f0f8fa;\n  border-radius: 20px;\n  border: 2px solid #32bee6;\n  max-width: 1180px;\n  margin: auto;\n  box-shadow: 5px 5px 25px 2px rgba(0, 0, 0, 0.3);\n}\n.posts-container .title[data-v-b9c20fb8] {\n  text-align: center;\n  text-transform: uppercase;\n  padding: 30px;\n  border-bottom: 2px solid #32bee6;\n}\n.posts-container .title h2[data-v-b9c20fb8] {\n  width: 20%;\n  margin: auto;\n  background-color: #73ffff;\n  border-radius: 10px;\n  border: 2px solid #7548e0;\n  padding: 5px 0;\n}\n.posts-container ul[data-v-b9c20fb8] {\n  list-style: none;\n}\n.posts-container ul li[data-v-b9c20fb8] {\n  padding: 20px 0;\n  margin-left: 50px;\n}\n.posts-container ul li a[data-v-b9c20fb8] {\n  text-decoration: none;\n}\n.posts-container ul li h3[data-v-b9c20fb8] {\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  color: #aa3ce1;\n}\n.posts-container ul li[data-v-b9c20fb8]:not(:last-child) {\n  border-bottom: 2px solid #32bee6;\n}", ""]);
 
 // exports
 
@@ -3247,7 +3249,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("main", { staticClass: "main" }, [
     _c("div", { staticClass: "posts-container" }, [
-      _c("h2", { staticClass: "title" }, [_vm._v("Lista Posts")]),
+      _vm._m(0),
       _vm._v(" "),
       _c(
         "ul",
@@ -3267,7 +3269,16 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "title" }, [
+      _c("h2", [_vm._v("Lista Posts")]),
+    ])
+  },
+]
 render._withStripped = true
 
 

@@ -1,7 +1,9 @@
 <template>
   <main class="main">
     <div class="posts-container">
-      <h2 class="title">Lista Posts</h2>
+      <div class="title">
+        <h2>Lista Posts</h2>
+      </div>
       <ul>
         <li v-for="post in posts" :key="post.id">
           <a href="#"
@@ -49,10 +51,18 @@ main {
 
   .title {
     text-align: center;
-    font-size: 2rem;
     text-transform: uppercase;
     padding: 30px;
     border-bottom: 2px solid rgb(50, 190, 230);
+
+    h2 {
+      width: 20%;
+      margin: auto;
+      background-color: rgb(115, 255, 255);
+      border-radius: 10px;
+      border: 2px solid rgb(117, 72, 224);
+      padding: 5px 0;
+    }
   }
 
   ul {
