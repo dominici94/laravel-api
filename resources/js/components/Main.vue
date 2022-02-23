@@ -36,6 +36,7 @@ export default {
 main {
   background-color: rgb(245, 245, 245);
   color: rgb(117, 72, 224);
+  padding: 70px;
 }
 .posts-container {
   background-color: rgb(240, 248, 250);
@@ -43,6 +44,8 @@ main {
   border: 2px solid rgb(50, 190, 230);
   max-width: 1180px;
   margin: auto;
+  -webkit-box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 25px 2px rgba(0, 0, 0, 0.3);
 
   .title {
     text-align: center;
